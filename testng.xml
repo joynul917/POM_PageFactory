@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" preserve-order="true" parallel="classes" thread-count="2">
+    
+<listeners>
+   <listener class-name="com.test.automation.uiAutomation.customListener.CustomListener"></listener>  
+   <listener class-name="com.test.automation.uiAutomation.customListener.RetryListener"></listener> 
+</listeners>
+    
+    
+    
+   <test name="HomePageTest">
+      
+    <classes>
+     <class name="com.test.automation.uiAutomation.homepage.TC002_VerifyLoginWithDifferentRecords"></class>
+        <class name="com.test.automation.uiAutomation.homepage.TC003_VerifyLoginWithValidCredentails"></class>
+        </classes>
+   </test>
+        
+   <test name="Registration page Test">
+       <classes>
+          <class name="com.test.automation.uiAutomation.homepage.TC001_RegisterPage"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC004_BookingTicket"></class>
+      </classes>
+   </test>    
+  <test name="All Moduales Test "> 
+        <classes>    
+          <class name="com.test.automation.uiAutomation.homepage.TC005_Hotels"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC006_ITINERARY"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC007_Destination"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC008_CarRentals"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC009_Cruises"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC0010_Contact"></class>
+          <class name="com.test.automation.uiAutomation.homepage.TC0011_Support"></class>
+        </classes>
+      
+   
+  </test> 
+</suite>
