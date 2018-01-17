@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Regression Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.test.automation.uiAutomation.customListener.CustomListener"/>
+    <listener class-name="com.test.automation.uiAutomation.customListener.RetryListener"/>
+  </listeners>
+  <test name="All Moduales Test (failed)" parallel="classes">
+    <classes>
+      <class name="com.test.automation.uiAutomation.homepage.TC001_RegisterPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeMethod"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC001_RegisterPage -->
+      <class name="com.test.automation.uiAutomation.homepage.TC006_ITINERARY">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC006_ITINERARY -->
+      <class name="com.test.automation.uiAutomation.homepage.TC0010_Contact">
+        <methods>
+          <include name="testContact"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC0010_Contact -->
+      <class name="com.test.automation.uiAutomation.homepage.TC0011_Support">
+        <methods>
+          <include name="testSupport"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC0011_Support -->
+      <class name="com.test.automation.uiAutomation.homepage.TC007_Destination">
+        <methods>
+          <include name="testDestinations"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC007_Destination -->
+      <class name="com.test.automation.uiAutomation.homepage.TC009_Cruises">
+        <methods>
+          <include name="testCruises"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC009_Cruises -->
+      <class name="com.test.automation.uiAutomation.homepage.TC004_BookingTicket">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC004_BookingTicket -->
+      <class name="com.test.automation.uiAutomation.homepage.TC003_VerifyLoginWithValidCredentails">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC003_VerifyLoginWithValidCredentails -->
+      <class name="com.test.automation.uiAutomation.homepage.TC002_VerifyLoginWithDifferentRecords">
+        <methods>
+          <include name="endTest"/>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC002_VerifyLoginWithDifferentRecords -->
+      <class name="com.test.automation.uiAutomation.homepage.TC008_CarRentals">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCarRentals"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC008_CarRentals -->
+      <class name="com.test.automation.uiAutomation.homepage.TC005_Hotels">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="endTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.automation.uiAutomation.homepage.TC005_Hotels -->
+    </classes>
+  </test> <!-- All Moduales Test (failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
